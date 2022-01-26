@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ebozor</title>
   <link rel="icon" href="./img/logo.jpg">
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   <link rel="stylesheet" href="./styles/bootstrap.min.css">
   <link rel="stylesheet" href="./styles/styles.css">
@@ -43,10 +46,15 @@
       </div>
     </div>
   </section>
-  <section class="site-loader">
-    <div class="slider">
-      <img src="./img/3.jpg" alt="slider images">
+  <section class="swiper site-loader">
+    <div class="swiper-wrapper slider">
+      <img class="swiper-slide" src="./img/3.jpg" alt="slider images">
+      <img class="swiper-slide" src="./img/4.jpg" alt="slider images">
+      <img class="swiper-slide" src="./img/img1.png" alt="slider images">
+      <img class="swiper-slide" src="./img/pens1.jpg" alt="slider images">
     </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
   </section>
   <section class="site-products">
     <div class="container">
@@ -221,6 +229,8 @@
       </footer>
     </div>
   </section>
+
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script src="./script/script.js"></script>
 </body>
 </html>

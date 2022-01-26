@@ -6,6 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ebozor</title>
   <link rel="icon" href="./img/logo.jpg">
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+  <!-- Link to the file hosted on your server, -->
+<!-- <link rel="stylesheet" href="path-to-the-file/splide.min.css"> -->
+<!-- <link rel="stylesheet" href="url-to-cdn/splide.min.css"> -->
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   <link rel="stylesheet" href="./styles/bootstrap.min.css">
   <link rel="stylesheet" href="./styles/styles.css">
@@ -72,9 +78,9 @@
     </div>
   </section>
   <section class="site-products">
-    <div class="container">
-      <div class="row my-4">
-        <div class="col-md-4">
+    <div class="swiper container">
+      <div class="swiper-wrapper my-4">
+        <div class="swiper-slide">
           <div class="card">
             <div class="card-header">
               <img src="./img/img5.png" alt="images">
@@ -96,7 +102,29 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="swiper-slide">
+          <div class="card">
+            <div class="card-header">
+              <img src="./img/img5.png" alt="images">
+            </div>
+            <div class="card-body">
+              <h3>Mahsulot nomi</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae accusamus perferendis quae est laudantium pariatur molestiae, quo beatae ipsam magnam.</p>
+              <div class="price">
+                <p class="price-text">100$</p>
+                <div class="price-list">
+                  <button class="decr btn btn-success">-</button>
+                  <p class="first-list">0</p>
+                  <button class="incr btn btn-success">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button class="w-100 btn btn-primary">Qo'shish</button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
           <div class="card">
             <div class="card-header">
               <img src="./img/img2.png" alt="images">
@@ -118,7 +146,73 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="swiper-slide">
+          <div class="card">
+            <div class="card-header">
+              <img src="./img/img3.png" alt="images">
+            </div>
+            <div class="card-body">
+              <h3>Mahsulot nomi</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae accusamus perferendis quae est laudantium pariatur molestiae, quo beatae ipsam magnam.</p>
+              <div class="price">
+                <p class="price-text">100$</p>
+                <div class="price-list">
+                  <button class="decr btn btn-success">-</button>
+                  <p class="first-list">0</p>
+                  <button class="incr btn btn-success">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button class="w-100 btn btn-primary">Qo'shish</button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <div class="card-header">
+              <img src="./img/img1.png" alt="images">
+            </div>
+            <div class="card-body">
+              <h3>Mahsulot nomi</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae accusamus perferendis quae est laudantium pariatur molestiae, quo beatae ipsam magnam.</p>
+              <div class="price">
+                <p class="price-text">100$</p>
+                <div class="price-list">
+                  <button class="decr btn btn-success">-</button>
+                  <p class="first-list">0</p>
+                  <button class="incr btn btn-success">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button class="w-100 btn btn-primary">Qo'shish</button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <div class="card-header">
+              <img src="./img/img5.png" alt="images">
+            </div>
+            <div class="card-body">
+              <h3>Mahsulot nomi</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae accusamus perferendis quae est laudantium pariatur molestiae, quo beatae ipsam magnam.</p>
+              <div class="price">
+                <p class="price-text">100$</p>
+                <div class="price-list">
+                  <button class="decr btn btn-success">-</button>
+                  <p class="first-list">0</p>
+                  <button class="incr btn btn-success">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button class="w-100 btn btn-primary">Qo'shish</button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide col-md-4">
           <div class="card">
             <div class="card-header">
               <img src="./img/img1.png" alt="images">
@@ -141,75 +235,9 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-header">
-              <img src="./img/Rectangle 3.png" alt="images">
-            </div>
-            <div class="card-body">
-              <h3>Mahsulot nomi</h3>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae accusamus perferendis quae est laudantium pariatur molestiae, quo beatae ipsam magnam.</p>
-              <div class="price">
-                <p class="price-text">100$</p>
-                <div class="price-list">
-                  <button class="decr btn btn-success">-</button>
-                  <p class="first-list">0</p>
-                  <button class="incr btn btn-success">+</button>
-                </div>
-              </div>
-            </div>
-            <div class="card-footer">
-              <button class="w-100 btn btn-primary">Qo'shish</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-header">
-              <img src="./img/img5.png" alt="images">
-            </div>
-            <div class="card-body">
-              <h3>Mahsulot nomi</h3>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae accusamus perferendis quae est laudantium pariatur molestiae, quo beatae ipsam magnam.</p>
-              <div class="price">
-                <p class="price-text">100$</p>
-                <div class="price-list">
-                  <button class="decr btn btn-success">-</button>
-                  <p class="first-list">0</p>
-                  <button class="incr btn btn-success">+</button>
-                </div>
-              </div>
-            </div>
-            <div class="card-footer">
-              <button class="w-100 btn btn-primary">Qo'shish</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-header">
-              <img src="./img/img3.png" alt="images">
-            </div>
-            <div class="card-body">
-              <h3>Mahsulot nomi</h3>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae accusamus perferendis quae est laudantium pariatur molestiae, quo beatae ipsam magnam.</p>
-              <div class="price">
-                <p class="price-text">100$</p>
-                <div class="price-list">
-                  <button class="decr btn btn-success">-</button>
-                  <p class="first-list">0</p>
-                  <button class="incr btn btn-success">+</button>
-                </div>
-              </div>
-            </div>
-            <div class="card-footer">
-              <button class="w-100 btn btn-primary">Qo'shish</button>
-            </div>
-          </div>
-        </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
       </div>
-    </div>
   </section>
   <section class="site-footer">
     <div class="container">
@@ -244,6 +272,9 @@
       </footer>
     </div>
   </section>
+
+  <!-- <script src="path-to-the-file/splide.min.js"></script> -->
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script src="./script/script.js"></script>
 </body>
 </html>
