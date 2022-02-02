@@ -6,8 +6,11 @@
   text-decoration: none;
 }
 .site-intro {
+  /* width: 100%; */
   padding: 10px 0;
   box-shadow: 2px 3px 10px 2px rgba(0,0,0,0.4);
+  /* position: static; */
+  /* z-index: 999; */
 }
 .site-navbor {
   display: flex;
@@ -171,18 +174,18 @@
 }
 
 .modals {
-  position: relative;
-  display: none;
-  justify-content: center;
-  align-items: center;
-}
-.wrapper-modal {
-  position: absolute;
   width: 700px;
   height: 500px;
-  margin: 100px auto;
+  z-index: 101;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
   background-color: #f4f4f4;
-  top: -40px;
+  top: 100px;
+  left: 380px;
+}
+.wrapper-modal {
+  margin: 100px auto;
 }
 
 .swiper {
@@ -197,4 +200,117 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.fa-bars {
+  display: none;
+}
+
+.site-navbar {
+  transition: all 1s ease;
+}
+
+@media only screen and (max-width: 480px) {
+  .site-navbar {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    display: inline-block;
+    z-index: 100;
+    background-color: #fff;
+    /* animation: sliderMenu 5s linear 2s infinite alternate; */
+  }
+  .site-nav-ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .site-nav-li {
+    display: block;
+  }
+  .site-nav-link {
+    padding: 20px 0;
+    text-align: left;
+    display: block;
+    color: #000;
+  }
+  .fa-bars {
+    font-size: 22px;
+    display: block;
+  }
+  .icon {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .site-navbor {
+    position: relative;
+  }
+  .site-navbar {
+    width: 200px;
+    height: 100vh;
+    position: absolute;
+    top: 80px;
+    left: -70px;
+    display: inline-block;
+    z-index: 100;
+    background-color: #fff;
+    /* animation: sliderMenu 5s linear 2s; */
+  }
+  .site-nav-ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .site-nav-li {
+    display: block;
+  }
+  .site-nav-link
+  {
+    padding: 30px 20px;
+    text-align: justify;
+    display: block;
+    color: #000;
+    font-size: 26px;
+  }
+  .fa-bars {
+    font-size: 22px;
+    display: block;
+  }
+  .icon {
+    display: none;
+  }
+}
+
+.none {
+  display: none;
+}
+
+.hidden {
+  overflow: hidden;
+}
+
+.fa-times {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+}
+
+@keyframes sliderMenu {
+  0% {
+    transform: translateX(-100px);
+  }
+  25% {
+    transform: translateX(-75px);
+  }
+  50% {
+    transform: translateX(-50px);
+  }
+  75% {
+    transform: translateX(-25px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+
 }

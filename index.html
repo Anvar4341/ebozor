@@ -14,8 +14,11 @@
   <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-  <div class="modals">
-    <div class="wrapper-modal"></div>
+  <div id="modal-lists" class="none modals">
+    <div class="wrapper-modal">
+      <h1>salomlar</h1>
+    </div>
+    <div class="fas fa-times"></div>
   </div>
   <section class="site-intro">
     <div class="container">
@@ -24,7 +27,7 @@
           <div class="site-logo">
             <img src="./img/logo.png">
           </div>
-          <nav>
+          <nav class=" site-navbar">
             <ul class="site-nav-ul">
               <li class="site-nav-li">
                 <a href="./index.html" class="site-nav-link">Home</a>
@@ -41,8 +44,9 @@
             <span class="card-cout">0</span>
             <i id="cart-plus" class="fas fa-cart-plus"></i>
           </div>
+          <div class="fas fa-bars">
+          </div>
         </div>
-        <div class="icons"></div>
       </div>
     </div>
   </section>
@@ -59,7 +63,7 @@
   <section class="site-products">
     <div class="container">
       <div class="row my-4">
-        <div class="col-md-4">
+        <div class="col-sm-12 col-md-4">
           <div class="card">
             <div class="card-header">
               <img src="./img/img5.png" alt="images">
@@ -77,7 +81,7 @@
               </div>
             </div>
             <div class="card-footer">
-              <button class="w-100 btn btn-primary">Qo'shish</button>
+              <button id="create" class="w-100 btn btn-primary">Qo'shish</button>
             </div>
           </div>
         </div>
@@ -99,7 +103,7 @@
               </div>
             </div>
             <div class="card-footer">
-              <button class="w-100 btn btn-primary">Qo'shish</button>
+              <button id="create" class="w-100 btn btn-primary">Qo'shish</button>
             </div>
           </div>
         </div>
@@ -121,7 +125,7 @@
               </div>
             </div>
             <div class="card-footer">
-              <button class="w-100 btn btn-primary">Qo'shish</button>
+              <button id="create" class="w-100 btn btn-primary">Qo'shish</button>
             </div>
           </div>
         </div>
@@ -145,7 +149,7 @@
               </div>
             </div>
             <div class="card-footer">
-              <button class="w-100 btn btn-primary">Qo'shish</button>
+              <button id="create" class="w-100 btn btn-primary">Qo'shish</button>
             </div>
           </div>
         </div>
@@ -162,12 +166,12 @@
                 <div class="price-list">
                   <button class="decr btn btn-success">-</button>
                   <p class="first-list">0</p>
-                  <button class="incr btn btn-success">+</button>
+                  <button id="create" class="incr btn btn-success">+</button>
                 </div>
               </div>
             </div>
             <div class="card-footer">
-              <button class="w-100 btn btn-primary">Qo'shish</button>
+              <button id="create" class="w-100 btn btn-primary">Qo'shish</button>
             </div>
           </div>
         </div>
@@ -189,7 +193,7 @@
               </div>
             </div>
             <div class="card-footer">
-              <button class="w-100 btn btn-primary">Qo'shish</button>
+              <button id="create" class="w-100 btn btn-primary">Qo'shish</button>
             </div>
           </div>
         </div>
